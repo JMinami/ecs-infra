@@ -24,6 +24,11 @@ provider "aws" {
   shared_credentials_files = ["~/.aws/credentials"]
 }
 
+module "common" {
+  source = "../../modules/common"
+  env    = "prod"
+}
+
 module "singleton" {
   source = "../../modules/singleton"
 }
