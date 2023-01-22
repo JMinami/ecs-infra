@@ -1,11 +1,11 @@
 .PHONY: tf-init
 tf-init:
-	cd infra/prod && \
+	cd infra/envs/prod && \
 	terraform init
 
 .PHONY: tf-apply
 tf-apply:
-	cd infra/prod && \
+	cd infra/envs/prod && \
 	terraform apply
 
 .PHONY: tf-fmt
